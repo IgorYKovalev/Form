@@ -1,0 +1,25 @@
+{% extends 'form/base.html' %}
+{% load static %}
+
+{% block css_add %}
+  <link rel="stylesheet" href="{% static 'form/css/index.css' %}">
+{% endblock %}
+
+{% block title %} Форма {% endblock %}
+
+{% block content %}
+<div class="wrapper">
+    <h1 class="form">Форма для заполнения</h1>
+    <form method="post" class="form form-input">
+        <div>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br/>
+            <button type="submit" class="btn_m btn btn-outline-primary">Отправить</button>
+            <a href="{% url 'index' %}">
+                Вернуться к шаблонам
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}

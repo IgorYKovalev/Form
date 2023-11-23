@@ -1,0 +1,15 @@
+{% extends 'form/base.html' %}
+
+{% block title %}
+    Поиск
+{% endblock %}
+
+{% block content %}
+    <ul><h3>Результат поиска:</h3></ul>
+{% for result in results %}
+    <ul><p>{{ result.name }}</p></ul>
+{% empty %}
+    <ul><p>Ничего не найдено.</p></ul>
+{% endfor %}
+    <ul><a href="{% url 'index' %}">Назад</a></ul>
+{% endblock %}

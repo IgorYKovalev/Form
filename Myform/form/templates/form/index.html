@@ -1,0 +1,28 @@
+{% extends 'form/base.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+    <ul><h3>Шаблоны:</h3></ul>
+{% for form in list_form %}
+<ul>
+    <a href="{% url 'detail' pk=form.pk %}">{{ form.name }}</a>
+</ul>
+{% endfor %}
+<br/>
+<ul>
+    <a href="{% url 'get_form' %}">Создать шаблон</a>
+</ul>
+<br/>
+<ul>
+    <div>
+        <form action="{% url 'search' %}" method="get">
+            <input type="text" name="q" placeholder="Введите название">
+            <button type="submit">Поиск</button>
+        </form>
+    </div>
+</ul>
+
+{% endblock %}
