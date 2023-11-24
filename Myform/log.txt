@@ -1645,3 +1645,81 @@ ValueError: The view form.views.search_view didn't return an HttpResponse object
 2023-11-23 19:58:17,870 [INFO] form.views Рендер страницы index
 2023-11-23 22:55:50,614 [INFO] django.utils.autoreload Watching for file changes with StatReloader
 2023-11-23 22:55:50,650 [INFO] form.views Рендер страницы Form
+2023-11-24 00:12:38,887 [INFO] django.utils.autoreload Watching for file changes with StatReloader
+2023-11-24 00:12:38,922 [INFO] form.views Рендер страницы Form
+2023-11-24 00:12:51,700 [INFO] form.views Рендер страницы index
+2023-11-24 02:25:47,933 [WARNING] django.request Bad Request: /get_form/
+2023-11-24 02:26:12,285 [ERROR] django.request Internal Server Error: /get_form
+Traceback (most recent call last):
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/get_form/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-11-24 02:27:35,427 [WARNING] django.request Bad Request: /get_form/
+2023-11-24 02:27:49,844 [ERROR] django.request Internal Server Error: /get_form
+Traceback (most recent call last):
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/get_form/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-11-24 02:27:57,380 [ERROR] django.request Internal Server Error: /get_form
+Traceback (most recent call last):
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/get_form/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-11-24 02:28:13,649 [ERROR] django.request Internal Server Error: /get_form
+Traceback (most recent call last):
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/get_form/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-11-24 02:29:55,089 [ERROR] django.request Internal Server Error: /get_form
+Traceback (most recent call last):
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kovalevigor/PycharmProjects/Form/venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/get_form/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-11-24 02:33:29,097 [WARNING] django.request Bad Request: /get_form/
+2023-11-24 02:33:46,268 [WARNING] django.request Bad Request: /get_form/
+2023-11-24 02:54:22,431 [WARNING] django.request Not Found: /favicon.ico
