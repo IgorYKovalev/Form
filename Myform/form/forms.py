@@ -7,8 +7,9 @@ class FormFieldForm(forms.ModelForm):
         model = FormField
         fields = ['name', 'name_field', 'type_field']
         widgets = {
-            'name': forms.TextInput(attrs={'size': 27, 'placeholder': 'название не более 25 символов', 'class': 'col-12'}),
-            'name_field': forms.TextInput(attrs={'class': 'col-12'}),
+            'name': forms.TextInput(attrs={'size': 27, 'placeholder': 'название не более 25 символов', 'class': 'form-control py-1'}),
+            'name_field': forms.TextInput(attrs={'class': 'form-control py-1'}),
+            'type_field': forms.Select(attrs={'class': 'form-select'}),
         }
 
     def clean_name(self):
