@@ -1,11 +1,11 @@
 {% extends 'form/base.html' %}
 
 {% block title %}
-    Главная страница
+Главная страница
 {% endblock %}
 
 {% block content %}
-    <ul><h3>Шаблоны:</h3></ul>
+<ul><h3>Шаблоны:</h3></ul>
 {% for form in list_form %}
 <ul>
     <a href="{% url 'detail' pk=form.pk %}">{{ form.name }}</a>
@@ -17,12 +17,11 @@
 </ul>
 <br/>
 <ul>
-    <div>
-        <form action="{% url 'search' %}" method="get">
-            <input type="text" name="q" placeholder="Введите название">
-            <button type="submit">Поиск</button>
+    <nav class="navbar bg-body-tertiary">
+        <form action="{% url 'search' %}" method="get" class="d-flex">
+            <input class="form-control me-2" type="text" name="q" placeholder="Введите название">
+            <button class="btn btn-outline-primary" type="submit">Поиск</button>
         </form>
-    </div>
+    </nav>
 </ul>
-
 {% endblock %}

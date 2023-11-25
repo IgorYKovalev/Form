@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block css_add %}
-  <link rel="stylesheet" href="{% static 'form/css/index.css' %}">
+<link rel="stylesheet" href="{% static 'form/css/index.css' %}">
 {% endblock %}
 
 {% block title %} Форма {% endblock %}
@@ -16,9 +16,7 @@
             {{ form.as_p }}
             <br/>
             <button type="submit" class="btn_m btn btn-outline-primary">Отправить</button>
-            <a href="{% url 'index' %}">
-                Вернуться к шаблонам
-            </a>
+            <strong><a href="{% url 'index' %}">Вернуться к шаблонам</a></strong>
         </div>
     </form>
 </div>

@@ -7,7 +7,8 @@ class FormFieldForm(forms.ModelForm):
         model = FormField
         fields = ['name', 'name_field', 'type_field']
         widgets = {
-            'name': forms.TextInput(attrs={'size': 27, 'placeholder': 'название не более 25 символов'})
+            'name': forms.TextInput(attrs={'size': 27, 'placeholder': 'название не более 25 символов', 'class': 'col-12'}),
+            'name_field': forms.TextInput(attrs={'class': 'col-12'}),
         }
 
     def clean_name(self):
@@ -15,6 +16,3 @@ class FormFieldForm(forms.ModelForm):
         if len(name) > 25:
             raise ValueError('Длина превышает 25 символов')
         return name
-
-
-
